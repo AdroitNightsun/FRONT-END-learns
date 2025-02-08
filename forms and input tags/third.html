@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Form to apply to be a man if need be</h1>
+    <form action="post">
+        <div>
+            <!-- for text input only -->
+            
+            <input type="text" name="username" id="username" placeholder="Enter your username">
+            <label for="username">Enter your username</label>
+        </div>
+        <div>
+            <!-- for selecting one of many, for lew line <br> -->
+            <p>Choose your favorite Web language:</p>
+           
+            
+                <input type="radio" id="html" name="fav_language" value="HTML">
+                <label for="html">HTML</label><br>
+                <input type="radio" id="css" name="fav_language" value="CSS">
+                <label for="css">CSS</label><br>
+                <input type="radio" id="javascript" name="fav_language" value="JavaScript">
+                <label for="javascript">JavaScript</label>
+           
+
+        </div>
+        <div>
+            <p>Choose your gender man !!</p>
+            <!-- for selecting multiple options -->
+            <input type="checkbox" name="gender" id="male" value="male">
+            <label for="male">Male</label><br>
+            <input type="checkbox" name="gender" id="female" value="female">
+            <label for="female">Female</label><br>
+            <input type="checkbox" name="gender" id="child" value="child">
+            <label for="child">Child</label>
+        </div>
+        <div>
+            <p>If you are done filling form, press submit:</p>
+            <!-- for adding a submit button -->
+            <input type="submit" value="Submit">
+            
+        </div>
+        <div>
+            <!-- for adding a custom button  -->
+             <p>
+                Get a stick if you are a man:</p>
+            <input type="button" value="Get a stick">
+            <label for="Get a stick">Get a stick</label>
+        </div>
+    </form>
+</body>
+</html>
