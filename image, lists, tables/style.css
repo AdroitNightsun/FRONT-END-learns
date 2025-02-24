@@ -7,3 +7,8 @@ table, th, td{
 th, td{
     background-color:  #009999;
 }
+body{
+    background-color: #009999;
+    font: 16px Arial, sans-serif;
+    color: White;
+}
