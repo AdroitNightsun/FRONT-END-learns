@@ -1,0 +1,52 @@
+/* 1. Universal Selector - Applies to all elements */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* 2. Class Selector - Styles elements with the class "button" */
+.button {
+    background-color: blue;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+}
+
+/* 3. ID Selector - Styles the element with id "header" */
+#header {
+    text-align: center;
+    font-size: 24px;
+    color: darkblue;
+}
+
+/* 4. Type Selector - Styles all <p> elements */
+p {
+    font-size: 16px;
+    color: gray;
+}
+
+/* 5. Descendant Selector - Targets <p> inside a <div> */
+div p {
+    font-weight: bold;
+    color: black;
+}
+
+/* 6. Child Selector - Targets direct children of <ul> */
+ul > li {
+    list-style: none;
+    color: green;
+    font-weight: bold;
+}
+
+/* 7. Pseudo-class Selector - Changes button color on hover */
+.button:hover {
+    background-color: darkblue;
+}
+
+/* 8. Pseudo-element Selector - Styles the first letter of <p> */
+p::first-letter {
+    font-size: 2em;
+    color: red;
+}
