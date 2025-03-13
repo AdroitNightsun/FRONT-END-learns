@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>specificity</title>
+</head>
+<style>
+    .yellow{
+        color: yellow;
+    }
+    h1.blue{
+        color: blue;
+    }
+    .yellow.red.blue{
+        color: red;
+    }
+    #title{
+        color: black;
+    }
+    #id1-id2-id3-id4-id5-id6-id7-id8-id9-id10-id11-id12 {
+    color: rgb(10, 101, 107);  /* Specificity: 1200 points */
+}
+   /* but still inline selector will win in this carcading algorithm */
+</style>
+<body>
+    <h1 class="yellow red blue" style="color: orange" id="id1-id2-id3-id4-id5-id6-id7-id8-id9-id10-id11-id12" >amma amma branv boi</h1>
+
+    
+</body>
+</html>
