@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .block-demo {
+            display: inline-block;
+            background: #ffcccc;
+            border: 2px solid red;
+            margin: 10px;
+            padding: 10px;
+            width: 200px;
+            display: flex;
+            justify-content: center;
+            /* Works on block */
+        }
+        .demo2{
+            /* visibility: hidden; */
+        }
+
+        .inline-demo {
+            background: #cccfff;
+            border: 2px solid blue;
+            margin: 10px;
+            /* Only works horizontally */
+            padding: 10px;
+            width: 200px;
+            /* No effect on inline */
+        }
+    </style>
+</head>
+
+<body>
+
+
+    <!-- Block Elements -->
+    <div class="block-demo demo2">Block 1</div>
+    <div class="block-demo">Block 2</div>
+
+    <!-- Inline Elements -->
+    <span class="inline-demo">Inline 1</span>
+    <span class="inline-demo">Inline 2</span>
+
+
+</body>
+
+</html>
