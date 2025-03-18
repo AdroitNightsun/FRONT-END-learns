@@ -35,20 +35,16 @@
         font-family: 'Poppins';
         color: grey;
     }
-    ul{
-        display: flex;
-        position: relative;
-        left: -37px;
-    }
-    ul li{
-        list-style-type: none;
+
+    .tags span{
+        
         font-size: 12px;
         font-family: 'Poppins';
         color: grey;
         border: 1px solid grey;
         border-radius: 50px;
-        padding: 5px;
-        margin-right: 10px;
+        padding: 5px 10px;
+        margin: 10px 10px 0px 0px;
     }
 button{
     background-color: rgb(220, 217, 253);
@@ -73,10 +69,10 @@ button:hover{
 <body>
     <div class="card">
         <img src="forcard.png" alt="forcard_image">
-        <ul>
-            <li>Nature</li>
-            <li>Lake</li>           
-        </ul>
+        <span class="tags">
+            <span>Nature</span>
+            <span>Lake</span>           
+        </span>
         <h1>Lago Di Braies</h1>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas iure voluptas maxime dolorem. Quo error obcaecati, sint tempora dolor.</p>
         <button>Read More</button>

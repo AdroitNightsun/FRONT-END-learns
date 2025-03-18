@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>variables</title>
+</head>
+<style>
+    :root{
+        --color: red;
+        --bg-color: rgb(250, 216, 255);
+        --font-size: 20px;
+    }
+    
+    *{
+        margin: 0;
+        padding: 0;
+        /* box-sizing: border-box; */
+    }
+
+    .container{
+        background-color: var(--bg-color);
+        color: var(--color);
+    }
+
+    ul{
+        list-style-type: none;
+        display: flex;
+    }
+
+    li{
+        padding: 20px;
+        font-size: var(--font-size);
+    }
+
+    div{
+        background-color: grey;
+        color: white;
+        padding: 20px;
+    }
+</style>
+<body>
+    <div class="container">
+        <ul>
+            <li>bro</li>
+            <li>bri</li>
+            <li>brat</li>
+        </ul>
+    </div>
+
+    <div>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorum voluptatem molestiae incidunt perferendis esse in reprehenderit voluptas quidem expedita, ipsa porro laudantium fugit?
+    </div>
+
+
+    
+</body>
+</html>
