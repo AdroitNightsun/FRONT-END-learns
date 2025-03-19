@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>layout design</title>
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Baloo+Bhai+2:wght@400..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap">
+    <style>
+        html {
+            scroll-behavior: smooth;
+        }
+
+
+
+        :root {
+            --color: white;
+            --bg-color-ap: linear-gradient(to left, rgb(0, 0, 0), rgb(97, 97, 97));
+            --bg-color-comp: rgba(0, 247, 255, 0.274);
+        }
+
+        body {
+            background: var(--bg-color-ap);
+            color: var(--color);
+            height: 1000px;
+            font-family: 'Poppins';
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        header {
+            background-color: var(--bg-color-comp);
+            list-style-type: none;
+            position: sticky;
+            top: 0;
+
+        }
+
+        nav ul {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            list-style: none;
+
+
+        }
+
+        li {
+            display: inline-block;
+            cursor: pointer;
+            margin: 6px;
+            font-size: 30px;
+            font-weight: bold;
+            font-family: 'Baloo Bhai 2';
+            transition: all 0.3s;
+        }
+
+        nav li a {
+            text-decoration: none;
+            color: var(--color);
+
+
+        }
+
+        nav li a:visited {
+            color: var(--color);
+        }
+
+        nav li a:hover {
+            text-decoration: underline;
+
+        }
+
+        li:hover {
+            transform: scale(1.1);
+            text-decoration: underline;
+        }
+
+        .lick {
+            font-size: 50px;
+            color: #00fff2;
+            margin-left: 60px;
+            margin-right: 60px;
+            font-weight: 900;
+        }
+
+        .lick:hover {
+            transform: scale(1.0);
+            text-decoration: none;
+        }
+
+        .logo {
+            position: fixed;
+            top: 520px;
+            left: 1190px;
+            box-shadow: #000000 0px 0px 20px 9px;
+            border-radius: 50px;
+        }
+
+        #images {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            margin: 100px;
+            border-radius: 10px;
+
+        }
+
+        .mamta {
+            font-size: 90px;
+            text-align: center;
+            margin: 100px;
+            padding: 100px;
+            background-color: var(--bg-color-comp);
+            border-radius: 199px;
+            font-weight: 900;
+            font-family: 'poppins';
+
+        }
+
+        footer {
+            font-family: 'poppins';
+            font-size: 11px;
+
+        }
+    </style>
+</head>
+
+<body id="head">
+    <header>
+        <nav>
+            <ul>
+                <li class="hoeme"><a href="#head">HEADER</a></li>
+                <li class="abs"><a href="#images">MAIN</a></li>
+                <li class="lick">LICK THIS SITE</li>
+                <li class="contact"><a href="#mamta-sec">CORE</a></li>
+                <li class="help"><a href="#and">END</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="logo">
+        <img src="logo.png" alt="ai" width="100px">
+    </section>
+
+    <section>
+        <span id="images">
+            <img src="sq1.png" alt="a sqrpic here" width="500px">
+            <img src="sq2.png" alt="second sqrpic here">
+        </span>
+    </section>
+    <div class="mamta" id="mamta-sec">
+        MAMTA'S INTERLUDE
+    </div>
+    <footer id="and">
+        <p>© 2020 MAMTA'S COPYRIGHT all rights reserved</p>
+    </footer>
+</body>
+
+</html>
