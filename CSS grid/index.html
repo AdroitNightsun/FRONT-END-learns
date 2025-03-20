@@ -5,11 +5,45 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>grid</title>
 </head>
+<style>
+    .grid-container{
+        border: 2px solid black;
+        margin: 0;
+        display: grid;
+        grid-template-areas: "nav nav nav"
+                             "side article article"
+                             "footer footer footer";
+    }
+    .item{
+        border: 2px solid red;
+        height: 155px;
+        
+    }
+    .item:nth-child(1){
+        grid-area: nav;
+    }
+    .item:nth-child(2){
+        grid-area: side;
+    }
+    .item:nth-child(3){
+        grid-area: article;
+    }
+    .item:nth-child(4){
+        grid-area: footer;
+    }
+    .item:nth-child(5){
+        grid-area: nav;
+    }
+</style>
 <body>
     <div class="grid-container">
         <div class="item">1</div>
         <div class="item">2</div>
         <div class="item">3</div>
+        <div class="item">4</div>
+        <div class="item">5</div>
+        <!-- <div class="item">6</div> -->
+        
     </div>
       
 </body>
