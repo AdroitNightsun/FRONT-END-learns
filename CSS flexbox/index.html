@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>flex box</title>
+    <style>
+
+        .container{
+            border: 4px solid rgb(255, 81, 0);
+            background: #ff0000;
+            height: 100vh;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            align-content: center;
+            flex-direction: row-reverse;
+            /* flex-wrap: wrap; */
+            gap: 66px 0px;
+        }
+        .item{
+            border: 5px solid rgb(126, 255, 5);
+            height: 150px;
+            width: 150px;
+            background-color: aqua;
+            
+        }
+        .item:nth-child(1){
+            background-color: #110000;
+            color: white;
+            font-size: 2rem;
+            text-align: center;
+            flex-grow: 22;
+            align-self: flex-start;
+
+        }
+
+    </style>
+</head>
+<body>
+
+    <main class="container">
+        <div class="item">gga i be ballin</div>
+        <div class="item"></div>
+        
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+    </main>
+    
+</body>
+</html>
