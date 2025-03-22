@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>nav bar using flexbox</title>
+</head>
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Parkinsans:wght@300..800&display=swap');
+    
+    body{
+        margin: 0;
+    }
+    header{
+        position: relative;
+        z-index: 99999;
+        margin-top: 4vh;
+    }
+    .nav{
+        /* border: 2px solid black; */
+        display: flex;
+        /* justify-content: space-around; */
+        width: 100vw;
+        /* length: 20vh; */
+        flex-wrap: wrap;
+        display: grid;
+        grid-template-areas: "logo ul translate search"
+        /* grid-template-rows: 25vw 50vw 10vw 10vw; */
+        
+
+    }
+    ul{
+        display: flex;
+        justify-content: space-around;
+        list-style-type: none;
+        justify-content: right;
+        color: rgb(27, 27, 27);
+        font-family: 'Parkinsans';
+        font-size: 15px;
+        gap: 30px;
+        flex-wrap: wrap;
+        text-align: right;
+        margin-top: 35px;
+        grid-area: ul;
+        /* border: 2px solid black; */
+        width: 62vw;
+        padding-right: 30px;
+        
+        
+    }
+    .logo{
+        /* margin-top: 8px; */
+        grid-area: logo;
+        /* align-self: center; */
+        /* padding-left: 50px; */
+        display: flex;
+        justify-content: center;
+        /* justify-content: space-around; */
+        
+        /* border: 2px solid black; */
+        width: 25vw;
+
+    }
+    .search{
+        /* align-self: ; */
+        grid-area: search;
+        /* border: 2px solid black; */
+        margin-top: 35px;
+        width: fit-content;
+        align-self: start;
+        justify-self: start;
+    }
+    .translate{
+        grid-area: translate;
+        /* border: 2px solid black; */
+        margin-top: 35px;
+        width: fit-content;
+        align-self: start;
+        justify-self: start;
+    }
+    li{
+        cursor: pointer;
+    }
+
+    
+    
+
+</style>
+
+<body>
+    <header>
+        <nav class="nav">
+            <a href="https://www.ultraedit.com/" class="logo">
+                <img src="UE-Logo.png" alt="UE-Logo">
+            </a>
+            <ul>
+                <li>Products&nbsp; v</li>
+                <li>For business&nbsp; v</li>
+                <li>Resources&nbsp; v</li>
+                <li>Support&nbsp; v</li>
+                <li>Our company&nbsp; v</li>
+            </ul>
+            <a href="" class="translate">
+                <img src="trans.png" alt="transition" width="30px">
+            </a>
+            <a href="" class="search">
+                <img src="search.png" alt="search" width="30px">
+            </a>
+        </nav>
+    </header>
+</body>
+
+</html>
