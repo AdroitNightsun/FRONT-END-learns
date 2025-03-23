@@ -20,12 +20,13 @@
     .nav{
         /* border: 2px solid black; */
         display: flex;
-        /* justify-content: space-around; */
+        justify-content: space-around;
         width: 100vw;
+        align-items: center;
         /* length: 20vh; */
-        flex-wrap: wrap;
-        display: grid;
-        grid-template-areas: "logo ul translate search"
+        /* flex-wrap: wrap; */
+        /* display: grid; */
+        /* grid-template-areas: "logo ul translate search" */
         /* grid-template-rows: 25vw 50vw 10vw 10vw; */
         
 
@@ -34,53 +35,39 @@
         display: flex;
         justify-content: space-around;
         list-style-type: none;
-        justify-content: right;
-        color: rgb(27, 27, 27);
+        /* justify-content: right; */
+        color: rgb(65, 65, 65);
         font-family: 'Parkinsans';
         font-size: 15px;
         gap: 30px;
+        font-weight: 500;
         flex-wrap: wrap;
-        text-align: right;
-        margin-top: 35px;
-        grid-area: ul;
+        align-items:center;
+        cursor: pointer;
+        /* margin-top: 35px; */
+        /* grid-area: ul; */
         /* border: 2px solid black; */
-        width: 62vw;
-        padding-right: 30px;
+        /* width: 62vw; */
+        /* padding-right: 30px; */
         
         
     }
     .logo{
         /* margin-top: 8px; */
-        grid-area: logo;
+        /* grid-area: logo; */
         /* align-self: center; */
         /* padding-left: 50px; */
-        display: flex;
-        justify-content: center;
+        /* display: flex;
+        justify-content: center; */
         /* justify-content: space-around; */
         
         /* border: 2px solid black; */
-        width: 25vw;
+        width: 100px;
 
     }
+    
     .search{
-        /* align-self: ; */
-        grid-area: search;
-        /* border: 2px solid black; */
-        margin-top: 35px;
-        width: fit-content;
-        align-self: start;
-        justify-self: start;
-    }
-    .translate{
-        grid-area: translate;
-        /* border: 2px solid black; */
-        margin-top: 35px;
-        width: fit-content;
-        align-self: start;
-        justify-self: start;
-    }
-    li{
-        cursor: pointer;
+        margin-left: -35px;
     }
 
     
@@ -91,22 +78,23 @@
 <body>
     <header>
         <nav class="nav">
-            <a href="https://www.ultraedit.com/" class="logo">
-                <img src="UE-Logo.png" alt="UE-Logo">
+            <a href="https://www.ultraedit.com/downloads/ultraedit-download-thank-you/?utm_source=CWH&utm_medium=LeadsAcquisition&utm_content=UEDownload&utm_campaign=UETrialDownload" class="logo">
+                <img src="https://www.ultraedit.com/wp-content/uploads/2023/01/UE-Logo-1.webp" alt="UE-Logo" width="205 px">
             </a>
             <ul>
-                <li>Products&nbsp; v</li>
-                <li>For business&nbsp; v</li>
-                <li>Resources&nbsp; v</li>
-                <li>Support&nbsp; v</li>
-                <li>Our company&nbsp; v</li>
+                <li><a href="">Products&nbsp; ⏷</a></li>
+                <li><a href="https://www.ultraedit.com/register-buy/quote/">For business&nbsp; ⏷</a></li>
+                <li><a href="https://www.ultraedit.com/downloads/extras/macros-scripts/">Resources&nbsp; ⏷</a></li>
+                <li><a href="https://www.ultraedit.com/support/">Support&nbsp; ⏷</a></li>
+                <li><a href="https://www.ultraedit.com/company/">Our company&nbsp; ⏷</a></li>
+                <li><a href="" class="translate">
+                    <img src="https://www.ultraedit.com/wp-content/themes/Divi_Child/img/Lang.png" alt=""></li>
+                <li><a href="" class="search">
+                    <svg fill="#000000"  width="20px" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="-29.3 -29.3 547.00 547.00" xml:space="preserve" transform="matrix(-1, 0, 0, 1, 0, 0)" stroke="#000000" stroke-width="27.8388"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <g> <g> <path d="M0,203.25c0,112.1,91.2,203.2,203.2,203.2c51.6,0,98.8-19.4,134.7-51.2l129.5,129.5c2.4,2.4,5.5,3.6,8.7,3.6 s6.3-1.2,8.7-3.6c4.8-4.8,4.8-12.5,0-17.3l-129.6-129.5c31.8-35.9,51.2-83,51.2-134.7c0-112.1-91.2-203.2-203.2-203.2 S0,91.15,0,203.25z M381.9,203.25c0,98.5-80.2,178.7-178.7,178.7s-178.7-80.2-178.7-178.7s80.2-178.7,178.7-178.7 S381.9,104.65,381.9,203.25z"></path> </g> </g> </g></svg>
+            </a></li>
             </ul>
-            <a href="" class="translate">
-                <img src="trans.png" alt="transition" width="30px">
-            </a>
-            <a href="" class="search">
-                <img src="search.png" alt="search" width="30px">
-            </a>
+            
+            
         </nav>
     </header>
 </body>
