@@ -8,16 +8,18 @@
 </head>
 <style>
     @import url('https://fonts.googleapis.com/css2?family=Parkinsans:wght@300..800&display=swap');
-    
-    body{
+
+    body {
         margin: 0;
     }
-    header{
+
+    header {
         position: relative;
         z-index: 99999;
         margin-top: 4vh;
     }
-    .nav{
+
+    .nav {
         /* border: 2px solid black; */
         display: flex;
         justify-content: space-around;
@@ -28,10 +30,11 @@
         /* display: grid; */
         /* grid-template-areas: "logo ul translate search" */
         /* grid-template-rows: 25vw 50vw 10vw 10vw; */
-        
+
 
     }
-    ul{
+
+    ul {
         display: flex;
         justify-content: space-around;
         list-style-type: none;
@@ -42,17 +45,18 @@
         gap: 30px;
         font-weight: 500;
         flex-wrap: wrap;
-        align-items:center;
+        align-items: center;
         cursor: pointer;
         /* margin-top: 35px; */
         /* grid-area: ul; */
         /* border: 2px solid black; */
         /* width: 62vw; */
         /* padding-right: 30px; */
-        
-        
+
+
     }
-    .logo{
+
+    .logo {
         /* margin-top: 8px; */
         /* grid-area: logo; */
         /* align-self: center; */
@@ -60,35 +64,84 @@
         /* display: flex;
         justify-content: center; */
         /* justify-content: space-around; */
-        
+
         /* border: 2px solid black; */
         width: 100px;
 
     }
-    
-    .search{
+
+    .search {
         margin-left: -35px;
     }
-    ul li a{
-        
+
+    ul li a {
+
         color: rgb(99, 99, 99);
         text-decoration: none;
         transition: all 0.7s;
 
     }
-    ul li a:hover{
-        
-        color:rgb(158, 158, 158);
+
+    ul li a:hover {
+
+        color: rgb(158, 158, 158);
 
     }
 
+    .heading {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 25px;
+        font-size: 50px;
+        font-family: 'parkinsans';
+        font-weight: 350;
+        margin-top: 10vh;
+    }
+
+    .crux {
+        /* display: flex;
+        justify-content: space-around; */
+        text-align: center;
+        font-size: 25px;
+        font-family: 'parkinsans';
+        font-weight: 350;
+        margin-top: 5vh;
+        /* margin-left: 10vw;
+        margin-right: 10vw; */
+    }
+
+    .ux-download {
+        /* border: none; */
+        background-color: rgb(55, 182, 214);
+        padding: 15px 20px;
+        border-radius: 7px;
+        font-family: 'parkinsans';
+        font-size: 15px;
+        color: white;
+        font-weight: 700;
+        text-decoration: none;
+        display: block;
+        width: fit-content;
+        margin: 5vh auto 0;
+        transition: all 0.5s;
+    }
+
+    .ux-download:hover {
+        background-color: rgb(50, 161, 189);
+        /* color: white;
+        transform: scale(1.05);
+        box-shadow: 0px 0px 10px black; */
+    }
 </style>
 
 <body>
     <header>
         <nav class="nav">
-            <a href="https://www.ultraedit.com/downloads/ultraedit-download-thank-you/?utm_source=CWH&utm_medium=LeadsAcquisition&utm_content=UEDownload&utm_campaign=UETrialDownload" class="logo">
-                <img src="https://www.ultraedit.com/wp-content/uploads/2023/01/UE-Logo-1.webp" alt="UE-Logo" width="205 px">
+            <a href="https://www.ultraedit.com/downloads/ultraedit-download-thank-you/?utm_source=CWH&utm_medium=LeadsAcquisition&utm_content=UEDownload&utm_campaign=UETrialDownload"
+                class="logo">
+                <img src="https://www.ultraedit.com/wp-content/uploads/2023/01/UE-Logo-1.webp" alt="UE-Logo"
+                    width="205 px">
             </a>
             <ul>
                 <li><a href="">Products&nbsp; ⏷</a></li>
@@ -97,15 +150,48 @@
                 <li><a href="https://www.ultraedit.com/support/">Support&nbsp; ⏷</a></li>
                 <li><a href="https://www.ultraedit.com/company/">Our company&nbsp; ⏷</a></li>
                 <li><a href="" class="translate">
-                    <img src="https://www.ultraedit.com/wp-content/themes/Divi_Child/img/Lang.png" alt=""></li>
+                        <img src="https://www.ultraedit.com/wp-content/themes/Divi_Child/img/Lang.png" alt=""></li>
                 <li><a href="" class="search">
-                    <svg fill="#000000"  width="20px" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="-29.3 -29.3 547.00 547.00" xml:space="preserve" transform="matrix(-1, 0, 0, 1, 0, 0)" stroke="#000000" stroke-width="27.8388"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <g> <g> <path d="M0,203.25c0,112.1,91.2,203.2,203.2,203.2c51.6,0,98.8-19.4,134.7-51.2l129.5,129.5c2.4,2.4,5.5,3.6,8.7,3.6 s6.3-1.2,8.7-3.6c4.8-4.8,4.8-12.5,0-17.3l-129.6-129.5c31.8-35.9,51.2-83,51.2-134.7c0-112.1-91.2-203.2-203.2-203.2 S0,91.15,0,203.25z M381.9,203.25c0,98.5-80.2,178.7-178.7,178.7s-178.7-80.2-178.7-178.7s80.2-178.7,178.7-178.7 S381.9,104.65,381.9,203.25z"></path> </g> </g> </g></svg>
-            </a></li>
+                        <svg fill="#000000" width="20px" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg"
+                            xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="-29.3 -29.3 547.00 547.00"
+                            xml:space="preserve" transform="matrix(-1, 0, 0, 1, 0, 0)" stroke="#000000"
+                            stroke-width="27.8388">
+                            <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                            <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+                            <g id="SVGRepo_iconCarrier">
+                                <g>
+                                    <g>
+                                        <path
+                                            d="M0,203.25c0,112.1,91.2,203.2,203.2,203.2c51.6,0,98.8-19.4,134.7-51.2l129.5,129.5c2.4,2.4,5.5,3.6,8.7,3.6 s6.3-1.2,8.7-3.6c4.8-4.8,4.8-12.5,0-17.3l-129.6-129.5c31.8-35.9,51.2-83,51.2-134.7c0-112.1-91.2-203.2-203.2-203.2 S0,91.15,0,203.25z M381.9,203.25c0,98.5-80.2,178.7-178.7,178.7s-178.7-80.2-178.7-178.7s80.2-178.7,178.7-178.7 S381.9,104.65,381.9,203.25z">
+                                        </path>
+                                    </g>
+                                </g>
+                            </g>
+                        </svg>
+                    </a></li>
             </ul>
-            
-            
         </nav>
     </header>
+
+    <main>
+        <div class="heading">
+            <div>Download <b>UltraEdit</b> for Windows</div>
+            <a href="https://www.g2.com/products/ultraedit/reviews/"><img
+                    src="https://www.ultraedit.com/wp-content/uploads/2022/10/Reviews.png" alt="reviews"
+                    width="130"></a>
+        </div>
+        <p class="crux">Download and try UltraEdit before you buy it! This download includes the full windows
+            <br>version of the text editor.
+        </p>
+        <a href="https://www.ultraedit.com/downloads/uex-thank-you/" class="ux-download">DOWNLOAD MAC OR LINUX
+            VERSION</a>
+    </main>
+
+    <div class="grid-upr">
+        <img src="https://wiki.ultraedit.com/resources/assets/icon_ue_new.png" alt="ultraedit" width="70">
+        <div class="grid-upr-heading">Download UltraEdit</div>
+        <div class="grid-upr-version">v2024.3 (released 2025-03-21) | Hotfix information </div>
+    </div>
 </body>
 
 </html>
