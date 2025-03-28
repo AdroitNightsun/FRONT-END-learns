@@ -134,18 +134,83 @@
         box-shadow: 0px 0px 10px black; */
     }
 
-    .grid-upr{
+    .grid-upr {
         display: flex;
         justify-content: center;
         align-items: center;
-        gap: 20px;       
+        gap: 20px;
         font-family: 'parkinsans';
         font-weight: 350;
         margin-top: 10vh;
     }
 
-    .grid-upr-heading{
+    .grid-upr-heading {
         font-size: 30px;
+    }
+
+    .grid-cards {
+        display: grid;
+        grid-template-areas: "1 2 3"
+                             "4 5 6"
+                             "7 8 9"
+                             "10 10 10";
+        gap: 20px;
+        justify-content: center;
+        margin-top: 6vh;
+
+    }
+
+    .card {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        /* width: fit-content; */
+        /* height: 100px; */
+        width: 300px;
+        font-family: 'parkinsans';
+        font-weight: 300;
+        padding: 20px;
+        background-color: #f9f9f9;
+        border-radius: 10px;
+        height: 200px;
+    }
+
+    .down64{
+        background-color: #5cb85c;
+        padding: 10px 15px;
+        border-radius: 9px;
+        font-weight: 700;
+        color: white;
+        text-decoration: none;
+        margin: 10px;
+        font-size: 14px;
+    }
+
+    footer{
+        background-color: #222222;
+        color: white;
+        padding-top: 10vh;
+        padding-bottom: 10vh;
+        padding-left: 10vw;
+        padding-right: 10vw;
+        font-family: 'parkinsans';
+        margin-top: 10vh;
+    }
+
+    footer div{
+        font-size: 28px;
+        font-weight: 600;
+    }
+
+    .copyright{
+        background-color: #222222;
+        color: white;
+        text-align: center;
+        padding: 10px;
+        font-family: 'parkinsans';
+        font-size: 12px;
     }
 </style>
 
@@ -204,7 +269,73 @@
     <div class="grid-upr">
         <img src="https://wiki.ultraedit.com/resources/assets/icon_ue_new.png" alt="ultraedit" width="65">
         <div class="grid-upr-heading">Download UltraEdit</div>
-        <div class="grid-upr-version">v2024.3 (released 2025-03-21) | Hotfix information &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</div>
+        <div class="grid-upr-version">v2024.3 (released 2025-03-21) | Hotfix information
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        </div>
+    </div>
+
+    <div class="grid-cards">
+        <div class="card 1">
+            <div style="font-size: 22px; margin-bottom: 30px;"><b>English</b></div>
+            <a href="https://downloads.ultraedit.com/main/ue/win/ue_english_64.exe" class="down64">Download 64-bit</a>
+            <p style="font-size:8.5px">SHA256<br>ECE5D50C7E98A334AC2BADAC00E8E53B6C492E138BAD6880448C<br>EF8B20A85F9A</p>
+        </div>
+        <div class="card 2">
+            <div style="font-size: 22px; margin-bottom: 30px;"><b>Deutsch</b></div>
+            <a href="https://downloads.ultraedit.com/main/ue/win/ue_german_64.exe" class="down64">Download 64-bit</a>
+            <p style="font-size:8.5px">SHA256<br>C3D89D95CE0668B4A5FA3BAA3C62CCFC62DBD2123126F3B3FE63<br>B9503D274974</p>
+        </div>
+        <div class="card 3">
+            <div style="font-size: 22px; margin-bottom: 30px;"><b>Italiano</b></div>
+            <a href="https://downloads.ultraedit.com/main/ue/win/ue_italian_64.exe" class="down64">Download 64-bit</a>
+            <p style="font-size:8.5px">SHA256<br>AD34E9551D0BD61881E0F5A4F5D4DB1644A7418F348CE9F1A80E<br>ED50E1DDB894</p>
+        </div>
+        <div class="card 4">
+            <div style="font-size: 22px; margin-bottom: 30px;"><b>Español</b></div>
+            <a href="https://downloads.ultraedit.com/main/ue/win/ue_spanish_64.exe" class="down64">Download 64-bit</a>
+            <p style="font-size:8.5px">SHA256<br>CFA1C3B921348FFCF61F770AECAC9B1D0BD3E3F36D94B97CF0BC<br>7FFAB511F6B8</p>
+        </div>
+        <div class="card 5">
+            <div style="font-size: 22px; margin-bottom: 30px;"><b>français</b></div>
+            <a href="https://downloads.ultraedit.com/main/ue/win/ue_french_64.exe" class="down64">Download 64-bit</a>
+            <p style="font-size:8.5px">SHA256<br>C225CE130723868246CE6B7040241D02BCFDBF3B2F031944BD4A<br>896F00A3B6A3</p>
+        </div>
+        <div class="card 6">
+            <div style="font-size: 22px; margin-bottom: 30px;"><b>Português brasileiro</b></div>
+            <a href="https://downloads.ultraedit.com/main/ue/win/ue_portuguese_64.exe" class="down64">Download 64-bit</a>
+            <p style="font-size:8.5px">SHA256<br>37BA31A86CD97F8F6236138F9EC6A6C407AB2822F1F12B567FD2<br>F5C1E37A1473</p>
+        </div>
+        <div class="card 7">
+            <div style="font-size: 22px; margin-bottom: 30px;"><b>日本</b></div>
+            <a href="https://downloads.ultraedit.com/main/ue/win/ue_japanese_64.exe" class="down64">Download 64-bit</a>
+            <p style="font-size:8.5px">SHA256<br>C6F05B920D371F32571D6FC9BD087D129124E126C8A8AFBD38B3<br>3C99336450B3</p>
+        </div>
+        <div class="card 8">
+            <div style="font-size: 22px; margin-bottom: 30px;"><b>한국어</b></div>
+            <a href="https://downloads.ultraedit.com/main/ue/win/ue_korean_64.exe" class="down64">Download 64-bit</a>
+            <p style="font-size:8.5px">SHA256<br>3A2486BC1FBBD19CEC0E21E309EDB037043211A5CED24F84CB0F<br>EDBB6FE28741</p>
+        </div>
+        <div class="card 9">
+            <div style="font-size: 22px; margin-bottom: 30px;"><b>华语</b></div>
+            <a href="https://downloads.ultraedit.com/main/ue/win/ue_chinese_64.exe" class="down64">Download 64-bit</a>
+            <p style="font-size:8.5px">SHA256<br>90F137EC142AA2CF3430872EDA7F80D2486CA438AA544FDB9551<br>A4FB36225163</p>
+        </div>
+        <div class="card 10">
+            <div style="font-size: 22px; margin-bottom: 30px;"><b>華語</b></div>
+            <a href="https://downloads.ultraedit.com/main/ue/win/ue_chinese_traditional_64.exe" class="down64">Download 64-bit</a>
+            <p style="font-size:8.5px">SHA256<br>9E3FDD11DF605B70597FCA9C91DAA41C4C5992357649867AE80A<br>CECC97ECA47E</p>
+        </div>
+    </div>
+
+    <footer>
+        <div>EXE or MSI?</div>
+        <p>The EXE builds of our products are the prefered downloads for most of our users, running Windows 10 and later.</p>
+        <p>We make MSI builds available for bulk or silent deployments(command line, GPO, SCCM, etc.). <a href="https://www.ultraedit.com/downloads/ultraedit-download-thank-you/msi/" style="text-decoration: none; color:rgb(55, 182, 214)">Get the UltraEdit MSI installer.</a></p>
+        <div>Free trial period</div>
+        <p>This application comes with a free, fullu functional 30 day period. After the period expires, you must <a href="https://www.ultraedit.com/catalog/" style="text-decoration: none; color:rgb(55, 182, 214)">purchase a licence</a> to continue using it.</p>
+    </footer>
+    <div class="copyright">
+        &copy; 2025 UltraEdit. All rights reserved
     </div>
 </body>
 
