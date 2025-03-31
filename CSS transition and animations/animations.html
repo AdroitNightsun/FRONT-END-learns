@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>animation</title>
+</head>
+<style>
+    .container{
+        background-color: blanchedalmond;
+        height: 50vh;
+
+    }
+    .box{
+        width: 100px;
+        background-color: chocolate;
+        height: 100px;
+        animation-name: ibeba;
+        animation-duration: 2s;
+        animation-iteration-count: infinite;
+        animation-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
+        animation-delay: 2s;
+        animation-duration: reverse;
+        /* animation shorthand */
+        
+    }
+
+    @keyframes ibeba{
+        from
+        {
+            background-color: red;
+        }
+        to{
+            transform: translate(1000px);
+            background-color: #660101;
+        }
+    }
+</style>
+<body>
+    <div class="container">
+        <div class="box transform"></div>
+    </div>
+</body>
+</html>
