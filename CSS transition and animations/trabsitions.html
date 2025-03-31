@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>transition</title>
+</head>
+
+<style>
+    .container{
+        background-color: blanchedalmond;
+        height: 50vh;
+
+    }
+    .box{
+        width: 100px;
+        background-color: chocolate;
+        height: 100px;
+        transition-property: background-color, transform;
+        transition-duration: 2s;
+        transition-timing-function: cubic-bezier(0.02, 0.82, 0.58, 1);
+        transition-delay: 1s;
+    }
+
+    .transform{
+        transform: translate(10vw, 10vh);
+        background-color: chartreuse;
+    }
+
+    .box:hover{
+        transform: none;
+    }
+
+    
+</style>
+<body>
+    <div class="container">
+        <div class="box transform"></div>
+    </div>
+</body>
+</html>
