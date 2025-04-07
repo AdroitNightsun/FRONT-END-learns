@@ -14,16 +14,17 @@
         padding: 0;
         /* font-family: Arial, sans-serif; */
         color: white;
+        min-height: 100vh;
         /* background-color: black; */
 
     }
 
     .main-background {
-        position: absolute;
+        position: fixed;
         top: 0;
         left: 0;
         width: 100%;
-        height: 2000px;
+        min-height: 100vh;
         z-index: -1;
         background: linear-gradient(to bottom, rgba(0, 0, 0, 0.719) 0%, rgba(0, 0, 0, 0.836) 60%, rgba(0, 0, 0, 0.918) 100%),
             url('https://img.freepik.com/free-photo/vivid-blurred-colorful-background_58702-2533.jpg?t=st=1743616187~exp=1743619787~hmac=960c2fba42ecfc1ef848538a016dcb61007573befa7320ff1ab3482fb0ea84f7&w=996');
@@ -55,6 +56,7 @@
         border-radius: 50px;
         font-size: 18px;
         height: 28px;
+        width: 98px;
         font-family: 'rubik';
         border: 0.5px solid rgb(124, 124, 124);
         font-weight: 400;
@@ -152,7 +154,7 @@
 
     .over-legs {
         font-family: 'rubik';
-        font-weight: 300;
+        font-weight: 370;
         padding-bottom: 20px;
     }
 
@@ -252,6 +254,48 @@
         position: absolute;
         bottom: 0;
         right: 20px;
+    }
+
+    .before-footer{
+        text-align: center;
+        margin-top: 10vh;
+    }
+
+    footer{
+        margin-left: 10vw;
+        margin-right: 10vw;
+        font-family: 'nunito sans';
+        font-weight: 300;
+        color: #fffcfce7;
+    }
+
+    .fg-head{
+        font-size: 17px;
+        margin-top: 12vh;
+        margin-bottom: 10vh;
+    }
+
+    footer a{
+        color: #fffcfce7;
+        text-decoration: underline;
+        text-decoration-color: #fffcfcb2;
+    }
+
+    .fg{
+        display: grid;
+        grid-template-areas: "fgi fgi fgi fgi"
+                             "fgi fgi fgi fgi"
+                             "fgi fgi fgi fgi"
+                             "fgi fgi fgi fgi";
+        gap: 15px;
+        margin-bottom: 10vh;
+        font-size: 15px;
+    }
+
+    .end{
+        font-size: 15px;
+        margin-top: 5vh;
+        margin-bottom: 10vh;
     }
 </style>
 
@@ -678,6 +722,46 @@
 
         </div>
     </section>
+
+    <section class="before-footer">
+        <div class="over-legs">Ready to watch? Enter your email to create or restart your membership.</div>
+                <div class="over-feets">
+                    <input type="email" name="Email" id="Email" placeholder="Email address">
+                    <button class="over-feets-button">Get Started ></button>
+                </div>
+    </section>
+
+    <footer>
+        <div class="fg-head">
+            Questions? Call <a href="tel:000-800-919-1743">000-800-919-1743</a>
+        </div>
+
+        <div class="fg">
+            <div class="fgi"><a href="https://help.netflix.com/support/412">FAQ</a></div>
+            <div class="fgi"><a href="https://help.netflix.com/">Help Center</a></div>
+            <div class="fgi"><a href="https://www.netflix.com/youraccount">Accoun</a>t</div>
+            <div class="fgi"><a href="https://media.netflix.com/">Media Center</a></div>
+            <div class="fgi"><a href="http://ir.netflix.com/">Investor Relations</a></div>
+            <div class="fgi"><a href="https://jobs.netflix.com/jobs">Jobs</a></div>
+            <div class="fgi"><a href="https://www.netflix.com/watch">Ways to Watch</a></div>
+            <div class="fgi"><a href="https://help.netflix.com/legal/termsofuse">Terms of Use</a></div>
+            <div class="fgi"><a href="https://help.netflix.com/legal/privacy">Privacy</a></div>
+            <div class="fgi"><a href="https://www.netflix.com/in/#">Cookie Preferences</a></div>
+            <div class="fgi"><a href="https://help.netflix.com/legal/corpinfo">Corporate Information</a></div>
+            <div class="fgi"><a href="https://help.netflix.com/contactus">Contact Us</a></div>
+            <div class="fgi"><a href="https://fast.com/">Speed Test</a></div>
+            <div class="fgi"><a href="https://help.netflix.com/legal/notices">Legal Notices</a></div>
+            <div class="fgi"><a href="https://www.netflix.com/in/browse/genre/839338">Only on Netflix</a></div>
+        </div>
+
+        <div class="language-button">
+            <a href="https://www.netflix.com/in-hi/">名 &nbsp;Hindi&nbsp; &nbsp;⏷</a>
+        </div>
+
+        <div class="end">
+            Netflix India
+        </div>
+    </footer>
 
 </body>
 
