@@ -297,6 +297,53 @@
         margin-top: 5vh;
         margin-bottom: 10vh;
     }
+
+    .trnd{
+        margin-left: 10vw;
+        margin-right: 10vw;
+    }
+
+    .trnd-head{
+        font-size: 35px;
+        font-weight: 600;
+        font-family: 'rubik';
+        color: #dfdbd9;
+        margin-top: 10vh;
+        text-align: left;
+        margin-bottom: 3vh;
+    }
+
+    .trnd-cards{
+        
+
+    }
+
+    .trnd-1{
+        /* width: 100%; */
+        transform: translate(0);
+    }
+
+    .trnd-1-bgi{
+        background-image: url('https://occ-0-2483-3647.1.nflxso.net/dnm/api/v6/-klpX4b1RECP-oGX3Uvz90PrgHE/AAAABXksAHXUuUdiqGUowSUMU1mUv4lPA-z4sOTIa5Uf0U0O9-wUlCsgFa-AHII1fn-Of8G2g2o0xl3KQk5KQLLy046kA6MnJQX0Btk-eJA_B36ORTsAxm8gB8D09nSb1m6QaRzR_UE79TBnlVLQqwp74k9wUmogmn2cDvNnaTg8OQ.webp?r=a41');
+        width: 130px;
+        height: 270px;
+        background-size: cover;
+        background-position: center;
+        border-radius: 15px;
+        
+    }
+
+    .trnd-1-no{
+        position: absolute;
+        top: 6px;
+        color: rgb(0, 0, 0);
+        font-size: 75px;
+        font-weight: 700;
+        font-family: 'rubik';
+        -webkit-text-stroke: 0.125rem rgb(255, 255, 255);/* never used until now */ 
+        left: -24px;
+
+    }
 </style>
 
 <body>
@@ -331,6 +378,17 @@
             </div>
         </div>
     </main>
+
+    <section class="trnd">
+        <div class="trnd-head">Trending Now</div>
+        <div class="trnd-cards">
+            <div class="trnd-1">
+                <div class="trnd-1-bgi"></div>
+                <div class="trnd-1-no">1</div>
+
+            </div>
+        </div>
+    </section>
 
     <section class="after-main">
         <div class="af-heading">
@@ -762,6 +820,8 @@
             Netflix India
         </div>
     </footer>
+
+    
 
 </body>
 
