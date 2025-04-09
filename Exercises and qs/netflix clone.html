@@ -304,16 +304,33 @@
     }
 
     .trnd-head{
+        
         font-size: 35px;
         font-weight: 600;
         font-family: 'rubik';
         color: #dfdbd9;
         margin-top: 10vh;
         text-align: left;
-        margin-bottom: 3vh;
+        margin-bottom: 4vh;
     }
 
     .trnd-cards{
+        /* margin-left: 5vw;
+        margin-right: 5vw; */
+        display: grid;
+        grid-template-areas: "trnd1 trnd2 trnd3 trnd4 trnd5";
+        /* align-items: center; */
+        display: flex;
+        justify-content: center;
+        gap: 3vw;
+        /* transition: all 1s;
+        transition: ease-in-out; */
+
+    }
+
+    .trnd-1:hover, .trnd-2:hover, .trnd-3:hover, .trnd-4:hover, .trnd-5:hover{
+        cursor: pointer;
+        transform: scale(1.07);
         
 
     }
@@ -321,11 +338,14 @@
     .trnd-1{
         /* width: 100%; */
         transform: translate(0);
+        /* transition: transform 0.5s ease-in-out; */
+        transition: all 0.3s;
+        
     }
 
     .trnd-1-bgi{
         background-image: url('https://occ-0-2483-3647.1.nflxso.net/dnm/api/v6/-klpX4b1RECP-oGX3Uvz90PrgHE/AAAABXksAHXUuUdiqGUowSUMU1mUv4lPA-z4sOTIa5Uf0U0O9-wUlCsgFa-AHII1fn-Of8G2g2o0xl3KQk5KQLLy046kA6MnJQX0Btk-eJA_B36ORTsAxm8gB8D09nSb1m6QaRzR_UE79TBnlVLQqwp74k9wUmogmn2cDvNnaTg8OQ.webp?r=a41');
-        width: 130px;
+        width: 135px;
         height: 270px;
         background-size: cover;
         background-position: center;
@@ -334,6 +354,121 @@
     }
 
     .trnd-1-no{
+        position: absolute;
+        top: 6px;
+        color: rgb(0, 0, 0);
+        font-size: 75px;
+        font-weight: 700;
+        font-family: 'rubik';
+        -webkit-text-stroke: 0.125rem rgb(255, 255, 255);/* never used until now */ 
+        left: -24px;
+
+    }
+
+    .trnd-2{
+        /* width: 100%; */
+        transform: translate(0);
+        /* transition: transform 0.5s ease-in-out; */
+        transition: all 0.3s;
+    }
+
+    .trnd-2-bgi{
+        background-image: url('https://occ-0-3752-3646.1.nflxso.net/dnm/api/v6/-klpX4b1RECP-oGX3Uvz90PrgHE/AAAABVbt3iTO02SKgalhjz1TKcUFfwgBoiSyMi4OrGZs5r7eJAa7bt0bIdlJ9RavE5-mhwKQeMVC9RtkfJ3bPN8JuUfkhnlnA2vvt-1PGfOeKwQwDy8GmRq4u6ZnyhNc74M1OwRIufnJPsYNH5bx2ZD_.webp?r=521');
+        width: 135px;
+        height: 270px;
+        background-size: cover;
+        background-position: center;
+        border-radius: 15px;
+        
+    }
+
+    .trnd-2-no{
+        position: absolute;
+        top: 6px;
+        color: rgb(0, 0, 0);
+        font-size: 75px;
+        font-weight: 700;
+        font-family: 'rubik';
+        -webkit-text-stroke: 0.125rem rgb(255, 255, 255);/* never used until now */ 
+        left: -24px;
+
+    }
+    .trnd-3{
+        /* width: 100%; */
+        transform: translate(0);
+        /* transition: transform 0.5s ease-in-out; */
+        transition: all 0.3s;
+    }
+
+    .trnd-3-bgi{
+        background-image: url('https://occ-0-3752-3646.1.nflxso.net/dnm/api/v6/-klpX4b1RECP-oGX3Uvz90PrgHE/AAAABWY2l29_Q4fcWvurVVPaQskEeybW5H-pz0CEcX59H0yDREVUcHOPdlpKjhb-AXYmIFt8ae6097xK17E5IGOUfagQ-SJzJTwRc_lNWC_j0pRPan0IziFLF6c2APQ_i2xlNlvvar-fiNgYE0jhcgFW.webp?r=82c');
+        width: 135px;
+        height: 270px;
+        background-size: cover;
+        background-position: center;
+        border-radius: 15px;
+        
+    }
+
+    .trnd-3-no{
+        position: absolute;
+        top: 6px;
+        color: rgb(0, 0, 0);
+        font-size: 75px;
+        font-weight: 700;
+        font-family: 'rubik';
+        -webkit-text-stroke: 0.125rem rgb(255, 255, 255);/* never used until now */ 
+        left: -24px;
+
+    }
+
+    .trnd-4{
+        /* width: 100%; */
+        transform: translate(0);
+        /* transition: transform 0.5s ease-in-out; */
+        transition: all 0.3s;
+    }
+
+    .trnd-4-bgi{
+        background-image: url('https://occ-0-3752-3646.1.nflxso.net/dnm/api/v6/-klpX4b1RECP-oGX3Uvz90PrgHE/AAAABVjrLRhUd4sxt54Fc2JheAUH6H8LLaABtXs7BMTiUAY0XMjlDQ52iV2G2iP7P8d3kPeEPTqI_zAXmXfjFc3u-uD2z1uT6_lqu9o7LAT-F_A1UypkdlQ02cmcoML68nMCwZkETzaOMuM6js-5wL6q.webp?r=942');
+        width: 135px;
+        height: 270px;
+        background-size: cover;
+        background-position: center;
+        border-radius: 15px;
+        
+    }
+
+    .trnd-4-no{
+        position: absolute;
+        top: 6px;
+        color: rgb(0, 0, 0);
+        font-size: 75px;
+        font-weight: 700;
+        font-family: 'rubik';
+        -webkit-text-stroke: 0.125rem rgb(255, 255, 255);/* never used until now */ 
+        left: -24px;
+
+    }
+
+    .trnd-5{
+        /* width: 100%; */
+        transform: translate(0);
+        /* transition: transform 0.5s ease-in-out; */
+        transition: all 0.3s;
+    }
+
+    .trnd-5-bgi{
+        background-image: url('https://occ-0-3752-3646.1.nflxso.net/dnm/api/v6/-klpX4b1RECP-oGX3Uvz90PrgHE/AAAABacrCXMLlWnxdiRot_1CVyGD6wgDHKQ_Un4rWHti1kyYn7viDTwwAOgAiHQsjGPcJAG03oWbZQial66ECMr2QcsKy2bSmUTsKuUPqMvvUYdlk3rjCvrAoCLVzMDERFsoYammxSBZxvG_5E5IMvUov4Qd_e5JokYc7UKRFsdyyHK5ixS_2wEnT4gu-fOBF6LvdMOXtSbgIirS9gSA.webp?r=296');
+        width: 135px;
+        height: 270px;
+        background-size: cover;
+        background-position: center;
+        border-radius: 15px;
+        
+    }
+
+    .trnd-5-no{
         position: absolute;
         top: 6px;
         color: rgb(0, 0, 0);
@@ -385,6 +520,26 @@
             <div class="trnd-1">
                 <div class="trnd-1-bgi"></div>
                 <div class="trnd-1-no">1</div>
+
+            </div>
+            <div class="trnd-2">
+                <div class="trnd-2-bgi"></div>
+                <div class="trnd-2-no">2</div>
+
+            </div>
+            <div class="trnd-3">
+                <div class="trnd-3-bgi"></div>
+                <div class="trnd-3-no">3</div>
+
+            </div>
+            <div class="trnd-4">
+                <div class="trnd-4-bgi"></div>
+                <div class="trnd-4-no">4</div>
+
+            </div>
+            <div class="trnd-5">
+                <div class="trnd-5-bgi"></div>
+                <div class="trnd-5-no">5</div>
 
             </div>
         </div>
