@@ -32,3 +32,4 @@ let o = {
 
 console.log(o); // { name: 'kendra', age: 22, isStudent: true, isTeacher: true, isAdmin: false, isEmployee: true }
 o.salary = " $2000";
+
