@@ -29,7 +29,8 @@ while(num <=100){
 let acc = ['b', 'c', 'a', 'j', 'k'];
 while(acc.length > 0){
     console.log(acc.pop());
-}let user = 0;
+}
+let user = 0;
 while(user <= 10){  
     console.log(`input: ${user}`);
     user += Math.floor(Math.random() * 5);
@@ -108,3 +109,52 @@ for (let subject in scores) {
     scores[subject] *= 2;
 }
 console.log(scores); // Outputs { math: 180, science: 170, history: 190 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+//qs 1 
+// const qs1 = {
+//     horry: 98,
+//     rohan: 70,
+//     aakash: 7
+// };
+// const entries = Object.entries(qs1);
+// for (let i = 0; i < entries.length; i++) {
+//     const [key, value] = entries[i];
+//     console.log(`${key}: ${value}`);
+// }
+
+//qs2
+const qs1 = {
+    horry: 98,
+    rohan: 70,
+    aakash: 7
+};
+for(let enteries in qs1){
+    console.log(`${enteries}: ${qs1[enteries]}`);
+};
+
+//qs3 
+// let msg = "try again"; 
+// let usr = 0;
+
+// while(usr <= 20){
+//     console.log("try again");
+//     usr += Math.floor(Math.random() * 2);
+// }
+
+let userInput = Math.floor(Math.random() * 100); // Random number between 0 and 99
+while (userInput !== 20) {
+    console.log("try again");
+    userInput = Math.floor(Math.random() * 100); // Generate new random input
+}
