@@ -18,7 +18,7 @@ result3 = add(222, 3);
 console.log(result, result2, result3);
 
 const func1 = (x)=>{
-    console.log("yo its me " + x);
+    console.log("yo its me " + x); //arrow function
 }
 
 func1("karan");
