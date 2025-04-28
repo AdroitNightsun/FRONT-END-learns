@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RAND factorial</title>
+</head>
+
+<body>
+
+    <script>
+
+        //using reduce once and for loops once
+        alert("yup its a factorial calculator! CRY ABOUT IT!");
+        let num = prompt("Enter a number to get its factorial:");
+        let fact = 1;
+        if(num < 0){
+            console.log("Factorial is not defined for negative numbers.");
+        }else{
+            for(let i = 1; i<=num; i++){
+                fact *= i;
+            }
+            console.log(`factorial of ${num} is ${fact}`);
+        }
+        alert(`factorial of ${num} is ${fact}`);
+
+    </script>
+
+</body>
+
+</html>
