@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document model</title>
+</head>
+<body>
+    <div class="container">
+        <div  class="box">this is a box</div>
+        <div  class="box">this is a box2</div>
+        <div  class="box">this is a box3</div>
+        <div  class="box">this is a box4</div>
+        <div  class="box">this is a box5</div>
+    </div>
+    <script>
+        document.title = "DOM Example";
+        console.log("Current title:", document.title);
+        console.log("Body element:", document.body);
+        
+        // Change background color and text color
+        document.body.style.backgroundColor = "#f0f0f0";
+        document.body.style.color = "#333";
+
+        document.body.firstElementChild;
+        document.body.firstElementChild.childNodes;
+        document.body.firstElementChild.children;
+        document.body.firstElementChild.childNodes[1];
+        document.body.firstElementChild.children[3].nextElementSibling;
+        document.body.firstElementChild.children[3].previousElementSibling;
+        document.body.firstElementChild.children[3].parentNode;
+        console.log(document.body.firstElementChild.children[3].nextElementSibling);
+    </script>
+    
+</body>
+</html>
