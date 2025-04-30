@@ -158,3 +158,11 @@ while (userInput !== 20) {
     console.log("try again");
     userInput = Math.floor(Math.random() * 100); // Generate new random input
 }
+
+//array making shoert cut
+let a = Math.floor(Math.random() * 10);
+function array_making(number) {
+    let array = Array.from(Array(number + 1).keys());
+    return array;
+}
+console.log(array_making(a));
