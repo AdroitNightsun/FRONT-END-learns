@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .box{
+        display: flex;
+    }
+
+    .red{
+        color: red;
+    }
+</style>
+<body>
+    <div class="container ">
+        <div  class="box">this is a box</div>
+        <div  class="box">this is a box2</div>
+        <div  class="box">this is a box3</div>
+        <div  class="box">this is a box4</div>
+        <div  class="box">this is a box5</div>
+    </div>
+    <script>
+        document.querySelector(".container").innerText;
+        console.log(document.querySelector(".container").innerText);
+        document.querySelector(".container").outer;
+        console.log(document.querySelector(".container").outer);
+        document.querySelector(".container").outerHTML;
+        console.log(document.querySelector(".container").outerHTML);
+        document.querySelector(".container").tagName;
+        console.log(document.querySelector(".container").tagName);
+        document.querySelector(".container").nodeName;
+        console.log(document.querySelector(".container").nodeName);
+        document.querySelector(".container").textContent;
+        console.log(document.querySelector(".container").textContent);
+        document.querySelector(".container").hidden;
+        // console.log(document.querySelector(".container").hidden = "true");
+        document.querySelector(".box").innerHTML = "ayo this is the box !";
+        console.log(document.querySelector(".box").getAttribute("style"));
+
+        document.designMode = "on";
+
+        let div = document.createElement("div");
+        div.innerHTML = "i have been inserted by karan <b>bro what</b>"
+        div.setAttribute("class", "created");
+        document.querySelector(".container").append(div);
+
+        let cont = document.querySelector(".container");
+        cont.insertAdjacentHTML("afterbegin", "i be ballin ,on your ling ling phone, <b>sheck wess</b>");
+
+        document.querySelector(".container").className;
+        document.querySelector(".container").classList.add("karan");
+        document.querySelector(".container").classList.remove("karan");
+        document.querySelector(".container").classList.toggle("red");
+    </script>
+</body>
+</html>
