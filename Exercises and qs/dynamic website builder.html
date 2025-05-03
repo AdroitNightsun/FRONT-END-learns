@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>card</title>
+</head>
+<style>
+    .container {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    .card {
+        border: 4px solid grey;
+        display: flex;
+        background: #3b3b3f;
+        width: 50%;
+        height: 20vh;
+        color: rgba(255, 255, 255, 0.822);
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .image {
+        position: relative;
+        width: fit-content;
+        height: fit-content;
+    }
+
+    .image img {
+        display: block;
+        border-radius: 10px;
+        max-height: 18vh;
+    }
+
+    .text {
+        margin-bottom: 3vh;
+    }
+
+    .text div {
+        font-size: large;
+        font-weight: 600;
+        color: white;
+    }
+
+    p {
+        font-size: small;
+    }
+
+    .capsule {
+        position: absolute;
+        bottom: 8px;
+        right: 8px;
+        background-color: rgba(43, 42, 42, 0.9);
+        color: white;
+        padding: 3px 4px;
+        border-radius: 3px;
+        font-size: 12px;
+    }
+
+    .add-card-btn {
+        margin: 20px;
+        padding: 10px 20px;
+        background-color: #4CAF50;
+        color: white;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        font-size: 16px;
+    }
+
+    .add-card-btn:hover {
+        background-color: #45a049;
+    }
+</style>
+
+<body>
+    <div class="container">
+        <button class="add-card-btn" onclick="createCard('Introduction to Backend | Sigma Web Dev video #2', 'CodeWithHarry', 560000, 7, '31:32', 'https://i.ytimg.com/vi/9JaDBYPmiJ0/hqdefault.jpg?sqp=-oaymwEmCKgBEF5IWvKriqkDGQgBFQAAiEIYAdgBAeIBCggYEAIYBjgBQAE=&rs=AOn4CLDUUhJPpVHG3CuE1RjKX3Z3q4gF2Q')">Add Card</button>
+    </div>
+
+    <script>
+        function createCard(title, cName, views, monthsOld, duration, thumbnail) {
+            let viewsnum;
+            if(views<1000000){
+                viewsnum = views/1000 + "K";
+            }else if(views>1000000){
+                viewsnum = views/1000000 + "M";
+            }else{
+                viewsnum = views/1000 + "K";
+            }
+             
+            let html = `<div class="card">
+            <div class="image"><img
+                    src="${thumbnail}"
+                    alt="thumbnail">
+                <div class="capsule">${duration}</div>
+            </div>
+            <div class="text">
+                <div>${title}</div>
+                <p>${cName} . ${viewsnum} views . ${monthsOld} months ago</p>
+            </div>
+        </div>`
+
+        document.querySelector(".container").innerHTML = document.querySelector(".container").innerHTML + html
+        }
+
+        createCard("Introduction to Backend | Sigma Web Dev video #2", "CodeWithHarry", 560000, 7, "31:32", "https://i.ytimg.com/vi/9JaDBYPmiJ0/hqdefault.jpg?sqp=-oaymwEmCKgBEF5IWvKriqkDGQgBFQAAiEIYAdgBAeIBCggYEAIYBjgBQAE=&rs=AOn4CLDUUhJPpVHG3CuE1RjKX3Z3q4gF2Q");
+    </script>
+</body>
+
+</html>
