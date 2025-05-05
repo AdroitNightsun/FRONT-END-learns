@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <div class="box">hey IMMA, BIG BOX</div>
+    </div>
+    <button id="btn">Chnage Content</button>
+
+    <script>
+        let button = document.getElementById("btn");
+
+        button.addEventListener("dblclick", ()=>{
+            document.querySelector(".box").innerHTML = "<b>IMMA big stepper, underground rapppr god noch hoes not the most not the lesser, transender the one who got the weather, so tell him imma bumping project patta, get inside in the with tha big dogs</b>"
+        })
+
+        document.addEventListener("keydown", (e)=>{
+            console.log(e);
+        })
+    </script>
+</body>
+</html>
