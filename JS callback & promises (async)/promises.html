@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>promises</title>
+</head>
+<body>
+
+    <script>
+        // First log - executes immediately
+        console.log("this is promises....");
+
+        // Create a new Promise that:
+        // 1. Takes resolve and reject functions as parameters
+        // 2. Contains a setTimeout that waits 3 seconds
+        let prom1 = new Promise((resolve, reject)=>{
+            setTimeout(()=>{
+                console.log("yea first one done");  // Logs after 3 seconds
+                resolve("bro first");  // Resolves the promise with value "bro"
+            },3000);
+        });
+
+        // Handle the resolved promise using .then()
+        // 'a' receives the value passed in resolve()
+        // prom1.then((a)=>{
+        //     console.log(a);  
+        // }).catch((a)=>{   
+        //     console.log(a);
+        // });
+        
+        const myPromise = new Promise((resolve, reject) => {
+          // Do something async, like a timeout or API call
+          let success = Math.floor(Math.random() * 11); // Simulating success or failure
+          if (success % 2 === 0) {
+            setTimeout(()=>{
+                resolve("Yay, it worked!"); // Success result
+            console.log("yeah new one done too!!")
+            }, 4000);
+            
+          } else {
+            reject("Oops, something broke!"); // Error
+          }
+        });
+           
+
+        //consumers
+        //promise API , for more refer to notes
+        let chainy = Promise.allSettled([myPromise, prom1]);
+        chainy.then((b)=>{ //runs when promice is fillfilled (resolved) 
+            console.log(b);
+        }).catch((err)=>{    //chaining  //Runs when the promise is rejected (error)
+            console.log(err);
+        });
+
+    </script>
+</body>
+</html>

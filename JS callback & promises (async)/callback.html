@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <script>
+        // console.log("hey imma big stepper");
+        // console.log("yo, imma big stopper");
+
+        // setTimeout(()=>{
+        //     console.log("god noych hoes not the most not the lesser");
+        // }, 2000);
+
+        // console.log("undrground rapper");
+
+        // function sayDone(){
+        //     console.log("All Done!!");
+        // };
+
+        // function doWork(callback){
+        //     console.log("Doing some work right Now ....");
+        //     callback();
+        // }
+        // doWork(sayDone);
+
+        // function waitandsay(callback){
+        //     setTimeout(()=>{
+        //         console.log("wait 5 seconds im doing something!!");
+        //         callback();
+        //     }, 2000);
+        // };
+
+        // waitandsay(()=>{
+        //     console.log("now im all done");
+        // });
+        // waitandsay(sayDone);
+
+        
+        // function cookMeal(meal, callback){
+            
+        //     setTimeout(()=>{
+        //         console.log(`cooking ${meal}`);
+        //         callback(meal);
+        //     }, 6000);
+        // };
+          
+        // function mealReady(meal){
+        //     console.log(`your ${meal} is ready!!!`);
+        // };
+
+        // cookMeal("pizza", mealReady);
+
+    function handleClick(pro, callback){
+        console.log(`Loading ${pro}...`);
+        setTimeout(()=>{           
+            callback();
+        }, 2000);
+    };
+    
+    function showSuccess(){
+        console.log("Success! The action is complete.");
+    };
+
+    handleClick("propper pron from pawnstars", showSuccess);
+    </script>
+</body>
+</html>
