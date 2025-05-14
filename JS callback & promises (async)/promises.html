@@ -18,7 +18,7 @@
             setTimeout(()=>{
                 console.log("yea first one done");  // Logs after 3 seconds
                 resolve("bro first");  // Resolves the promise with value "bro"
-            },3000);
+            },1000);
         });
 
         // Handle the resolved promise using .then()
@@ -36,22 +36,62 @@
             setTimeout(()=>{
                 resolve("Yay, it worked!"); // Success result
             console.log("yeah new one done too!!")
-            }, 4000);
+            }, 2000);
             
           } else {
-            reject("Oops, something broke!"); // Error
+            reject("Oops, something broke! in 2"); // Error
           }
         });
+
+        const prom2 = new Promise((resolve, reject)=>{
+            let success = Math.floor(Math.random() * 11); // Simulating success or failure
+          if (success % 2 === 0) {
+            setTimeout(()=>{
+                resolve("Yay, it worked! also 3 btw"); // Success result
+            console.log("yeah new one done too its 3 btw!!")
+            }, 3000);
+            
+          } else {
+            reject("Oops, something broke! in 3"); // Error
+          }
+        })
            
 
         //consumers
         //promise API , for more refer to notes
-        let chainy = Promise.allSettled([myPromise, prom1]);
-        chainy.then((b)=>{ //runs when promice is fillfilled (resolved) 
+        let chainy = Promise.any([ prom1, myPromise, prom2]); //all(if one failed all results are ignored), allsettled(waits for all the promises to settle and returns their result as an array), race(waits for the first promise to settle and its result/error becomes the outcome), any(waits for the first promise to fullfill and not rejected, then its result becomes the outcome.throws aggregate error if all the promise rejcted)
+
+        chainy.then((b)=>{ //runs when promice is fillfilled (resolved), resolve(makes a resolved promise with the given value), reject(makes a reject promise with the given value) 
             console.log(b);
         }).catch((err)=>{    //chaining  //Runs when the promise is rejected (error)
             console.log(err);
         });
+
+        //new example
+        const fetchuser = new Promise((resolve, reject)=>{
+          setTimeout(()=>{
+            let rand = Math.random();
+            if(rand>0.5){
+              resolve({ id: 1, name: "brodie", age: 777});
+              console.log(rand);
+            }else{
+              reject("ERROR: my like ikky");
+            }
+          },4000)
+        })
+
+        fetchuser.then(user =>{
+          console.log(`Got user: ${user.name}`);
+          return new Promise((resolve)=>{
+            setTimeout(()=> {
+              resolve({ id: user.id, email: "ikky@brodies.corn", age: user.age });
+            }, 4000);
+          })
+        }).then(details =>{
+          console.log(`Got details: ${details.email}`);
+        }).catch(error => console.log("ERROR:", error ));
+        
+        
 
     </script>
 </body>
