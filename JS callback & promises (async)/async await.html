@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>async/await</title>
+</head>
+
+<body>
+
+    <script>
+        //normal examp
+        // const getmsg = new Promise((resolve) => {
+        //     setTimeout(() => resolve("hailo, brodies"), 5000);
+        // });
+
+        // async function showmsg() {
+
+        //     console.log(await getmsg);
+        // }
+
+        // showmsg();
+        // const getmsg2 = new Promise((resolve) => {
+        //     setTimeout(() => resolve("hailo, breedies"), 2000);
+        // });
+        
+        // getmsg2.then((a) => {
+        //     console.log(a);
+        // })
+
+        //error handling examp
+        const getuser = new Promise((resolve, reject)=>{
+            setTimeout(()=>{
+                var raand = Math.random();
+                if(raand > 0.5){
+                    resolve({
+                        name: "aditi",
+                        age: 21
+                    });
+                }else{
+                    reject(`ERROR: 404 (Random number was ${raand})`);
+                }
+            }, 4000);
+        });
+
+        async function displayurs(){
+            try{
+                console.log(await getuser);
+            }catch (error){
+                console.log(error);
+            }
+        }
+
+        displayurs();
+
+        //3.multiple async opration
+    </script>
+</body>
+
+</html>
