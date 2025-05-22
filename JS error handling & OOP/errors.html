@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let a = prompt("enter a number");
+        let b = prompt("another one");
+
+        if(isNaN(a) || isNaN(b)){
+            throw SyntaxError("sorry this is not allowed")
+        }
+        
+        let sum = parseInt(a) + parseInt(b);
+
+        try {
+            console.log("the sum is ", sum*x);
+        } catch (error) {
+            console.log("error aagya brodie");
+        }finally{
+            console.log("this can run even after RETURNS in functions")
+        }
+
+    </script>
+</body>
+</html>
