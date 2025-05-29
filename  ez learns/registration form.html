@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>REGISTRATION-FORM</title>
+</head>
+
+<body>
+    <form>
+        <h1>Registration Form</h1>
+        <hr>
+        First Name : <input type="text" placeholder="Enter First Name" required>
+        <br>
+        Last Name : <input type="text" placeholder="Enter Last Name" required>
+        <br>
+        Email : <input type="email" placeholder="Enter Email Address" required>
+        <br>
+        Password : <input type="password" minlength="8" required>
+        <br>
+        Gender :-
+        <br>
+        Male <input type="radio" name="Gender" id="Male">
+        <br>
+        Female <input type="radio" name="Gender" id="Female">
+        <br>
+        Other <input type="radio" name="Gender" id="Other">
+        <br>
+        Age : <input type="number" min="18" placeholder="Enter Your Age" required>
+        <br>
+        Preferences :-
+        <br>
+        Acrylic Painting <input type="checkbox">
+        Oil Painting <input type="checkbox">
+        Water color Painting <input type="checkbox">
+        <br>
+        Select Occupation: <select>
+            <option disabled>Choose from the following</option>
+            <option selected>Student</option>
+            <option >delivery man</option>
+            <option >banker</option>
+            <option >Freelancer</option>
+            </select>
+            <br>        
+            Bio <textarea rows="4" cols="50" placeholder="Share a few lines about yourself..."></textarea>
+            <br>
+            <input type="reset" value="RESET"> 
+            <input type="submit" value="SUBMIT">
+
+    </form>
+</body>
+
+</html>
