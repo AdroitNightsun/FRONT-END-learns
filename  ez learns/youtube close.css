@@ -527,7 +527,18 @@
             width: auto;
         }
         .create-btn{
-            margin-left: -1rem;
+            margin-left: -4rem;
+        }
+    }
+    html {
+        font-size: 16px; /* Base font size */
+    }
+
+    @media screen and (max-width: 480px) {
+        html {
+            -ms-text-size-adjust: 100%;
+            -moz-text-size-adjust: 100%;
+            -webkit-text-size-adjust: none;
         }
     }
 
@@ -536,4 +547,22 @@
         color: azure;
         font-size: 40px;
         margin-top: 100px;
+    }
+    html, body {
+        touch-action: pan-x pan-y;
+        -ms-touch-action: pan-x pan-y;
+        -webkit-touch-callout: none;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+    }
+
+    @media screen and (max-width: 480px) {
+        html {
+            zoom: reset;
+            -ms-text-size-adjust: 100%;
+            -moz-text-size-adjust: 100%;
+            -webkit-text-size-adjust: 100%;
+        }
     }
