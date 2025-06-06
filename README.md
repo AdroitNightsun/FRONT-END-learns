@@ -1,2 +1,2 @@
-# HTML-learns
-day by day HTML
+# FRONT-END learns
+day by day, till ear end.
