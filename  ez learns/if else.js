@@ -27,4 +27,4 @@ if(num > num2){
     console.log(`2(${num2}) is greater ,1 is(${num})`);
 }else{
     console.log(`1(${num}) and 2(${num2}) are equal`);
-}
+};
