@@ -108,3 +108,9 @@ for(let i=0; i<h.length; i++){
     };
 };
 console.log(eh);
+
+
+const numbers = [5,8,9];
+const doubled = numbers.map(num => num * 2);
+console.log(doubled);
+// doubled is now [2, 4, 6]
