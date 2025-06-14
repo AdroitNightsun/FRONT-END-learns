@@ -77,13 +77,15 @@
       input {
         flex: 1;
         padding: 0.8rem;
-        border: 2px solid #eee;
+        /* border: 2px solid #eee; */
+        border: none;
         border-radius: 0.5rem;
         font-size: 1rem;
         max-width: 25rem;
         transition: border-color 0.3s ease;
         box-shadow: 0px 0px 5px 0px rgb(0 0 0 / 42%);
         /* font-family: "Caprasimo"; */
+        box-shadow:  inset 0px 0px 5px 0px rgb(0 0 0);
       }
 
       input:focus {
@@ -101,7 +103,7 @@
         font-size: 1.5rem;
         font-weight: 600;
         cursor: pointer;
-        transition: all 0.3s ease;
+        transition: all 0.7s ease;
         animation: animation-aagePeeche 10s ease infinite;
         background-size: 300% 300%;
         box-shadow: 0px 0px 5px 0px rgb(0 0 0 / 42%);
@@ -109,6 +111,7 @@
       }
 
       .add-btn:hover {
+        box-shadow: 0px 0px 20px 3px #ffffff98;
       }
       #taskli {
         list-style: none;
@@ -128,6 +131,7 @@
         transition: all 0.3s ease;
         display: flex;
         justify-content: space-between;
+        box-shadow: inset 0px 0px 5px 0px rgb(0 0 0);
       }
 
       #taskli li:hover {
