@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      function argument(x, y) {
+        //these are paramerters
+        return x + y;
+      }
+
+      let a = 1,
+        b = a;
+
+      console.log(argument(a, b)); //these are arguments
+
+      //setTimeout with callback function
+      function callme(digger, callhim) {
+        console.log(`hello callme ${digger}`);
+        callhim();
+      }
+      function bro() {
+        console.log("and call him bigger!");
+      }
+      callme("driller", bro);
+      //
+      function fetchData(callback) {
+        setTimeout(() => {
+          const data = "some data";
+          callback(data);
+        }, 5000);
+      }
+
+      function prossesData(dataa) {
+        console.log(`reseived : ${dataa}`);
+      }
+
+      fetchData(prossesData);
+      //we use callback not so much because i could create a nested messof callbacks and also there is a good alterntive called promises async/await.
+
+      //callback with clearintarval
+      function one(name, inside){
+        console.log(`hi ${name}!`);
+        inside();
+      }
+
+      function two(){
+        console.log("lets party!!!");
+      }
+
+      const intearvali = setInterval(()=>{
+        one("sam", two);
+      },1000);
+
+      setTimeout(()=>{
+        clearInterval(intearvali);
+        console.log("all done");
+      }, 3000);
+    </script>
+  </body>
+</html>
