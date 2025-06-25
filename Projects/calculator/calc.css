@@ -419,12 +419,18 @@ input[type="number"] {
   
 
 }
+button:active{
+  filter: brightness(0.5);
+
+}
 
 .right_brack, .left_brack, .percent{
   background-color: rgba(255, 255, 255, 0.13);
   border: none;
   color: white;
   font-size: 2rem;
+  cursor: pointer;
+
 }
 
 .sev, .ei, .ni, .fo, .fi, .si, .one, .too, .thr, .ze, .dec, .eq{
@@ -432,6 +438,7 @@ input[type="number"] {
   border: none;
   color: white;
   font-size: 2rem;
+  cursor: pointer;
 }
 
 .divide, .x, .min, .plus, .del{
@@ -440,13 +447,12 @@ input[type="number"] {
   color: white;
   font-size: 2rem;
   padding: 0.5rem;
+  cursor: pointer;
 }
 
-/* button{
-  width: 120px;
-  height: 40px;
-  box-sizing: border-box;
-} */
+button{
+  transition: all 0.2s;
+}
 .right_brack {
   grid-area: right;
 }
