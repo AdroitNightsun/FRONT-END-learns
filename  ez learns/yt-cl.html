@@ -1,61 +1,80 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>YouTube Clone</title>
-    <link rel="stylesheet" href="yt-cl.css">
-</head>
-<body>
+    <link rel="stylesheet" href="yt-cl.css" />
+  </head>
+  <body>
     <nav class="nav">
-        <div class="start-nv">
-            <div class="logo">
-                <svg viewBox="0 0 90 20" preserveAspectRatio="xMidYMid meet">
-                    <!-- YouTube logo SVG paths (unchanged) -->
-                    <g>
-                        <path fill="white" d="M27.9727 3.1232C27.6435 1.89394 26.8108 1.10421 25.6714 0.760492C24.7041 0.462957 22.3124 0 18.7876 0H8.71807C5.19326 0 2.80161 0.463636 1.83425 0.760492C0.715532 1.10349 0.0261175 1.89394 0.00304236 3.1232C-0.0396148 5.63293 0 10.2754 0 10.2754V10.5117C0 10.5117 0.0396148 15.1542 0.00304236 17.6646C0.0261175 18.8939 0.715532 19.6843 1.83425 20.0273C2.80161 20.3249 5.19326 20.7878 8.71807 20.7878H18.7876C22.3124 20.7878 24.7041 20.3249 25.6714 20.0273C26.8108 19.6843 27.6435 18.8939 27.9727 17.6646C28.0123 15.1542 27.9727 10.5117 27.9727 10.5117V10.2754C27.9727 10.2754 28.0123 5.63293 27.9727 3.1232ZM11.4267 15.2928V5.49451L21.2876 10.2754L11.4267 15.2928Z"></path>
-                    </g>
-                </svg>
-                <span class="logo-domain">IN</span>
-            </div>
+      <div class="start-nv">
+        <div class="logo">
+          <svg viewBox="0 0 90 20" preserveAspectRatio="xMidYMid meet">
+            <!-- YouTube logo SVG paths (unchanged) -->
+            <g>
+              <path
+                fill="white"
+                d="M27.9727 3.1232C27.6435 1.89394 26.8108 1.10421 25.6714 0.760492C24.7041 0.462957 22.3124 0 18.7876 0H8.71807C5.19326 0 2.80161 0.463636 1.83425 0.760492C0.715532 1.10349 0.0261175 1.89394 0.00304236 3.1232C-0.0396148 5.63293 0 10.2754 0 10.2754V10.5117C0 10.5117 0.0396148 15.1542 0.00304236 17.6646C0.0261175 18.8939 0.715532 19.6843 1.83425 20.0273C2.80161 20.3249 5.19326 20.7878 8.71807 20.7878H18.7876C22.3124 20.7878 24.7041 20.3249 25.6714 20.0273C26.8108 19.6843 27.6435 18.8939 27.9727 17.6646C28.0123 15.1542 27.9727 10.5117 27.9727 10.5117V10.2754C27.9727 10.2754 28.0123 5.63293 27.9727 3.1232ZM11.4267 15.2928V5.49451L21.2876 10.2754L11.4267 15.2928Z"
+              ></path>
+            </g>
+          </svg>
+          <span class="logo-domain">IN</span>
         </div>
-        <div class="mid-nv">
-            <div class="search-bar">
-                <input type="search" class="search-placeholder" placeholder="Search" aria-label="Search YouTube">
-                <div class="search-icon">
-                    <svg height="24" viewBox="0 0 24 24" width="24">
-                        <path d="M15.5 14h-.79l-.28-.27A6.471 6.471 0 0 0 16 9.5 6.5 6.5 0 1 0 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.27v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"></path>
-                    </svg>
-                </div>
-            </div>
-            <div class="mic-bg">
-                <svg class="mic-icon" viewBox="0 0 24 24">
-                    <path d="M12 14c1.66 0 2.99-1.34 2.99-3L15 5c0-1.66-1.34-3-3-3S9 3.34 9 5v6c0 1.66 1.34 3 3 3zm5.3-3c0 3-2.54 5.1-5.3 5.1S6.7 14 6.7 11H5c0 3.41 2.72 6.23 6 6.72V21h2v-3.28c3.28-.48 6-3.3 6-6.72h-1.7z"></path>
-                </svg>
-            </div>
+      </div>
+      <div class="mid-nv">
+        <div class="search-bar">
+          <input
+            type="search"
+            class="search-placeholder"
+            placeholder="Search"
+            aria-label="Search YouTube"
+          />
+          <div class="search-icon">
+            <svg height="24" viewBox="0 0 24 24" width="24">
+              <path
+                d="M15.5 14h-.79l-.28-.27A6.471 6.471 0 0 0 16 9.5 6.5 6.5 0 1 0 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.27v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"
+              ></path>
+            </svg>
+          </div>
         </div>
-        <div class="end-nv">
-            <div class="create-btn">
-                <svg class="plus-icon" viewBox="0 0 24 24">
-                    <path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-5 14h-2v-4h-4v-2h4V7h2v4h4v2h-4v4z"></path>
-                </svg>
-                <span class="create-word">Create</span>
-            </div>
-            <button class="bell-btn" aria-label="Notifications">
-                <svg class="bell-icon" viewBox="0 0 24 24">
-                    <path d="M12 22c1.1 0 2-.9 2-2h-4c0 1.1.9 2 2 2zm6-6v-5c0-3.07-1.64-5.64-4.5-6.32V4c0-.83-.67-1.5-1.5-1.5s-1.5.67-1.5 1.5v.68C7.63 5.36 6 7.92 6 11v5l-2 2v1h16v-1l-2-2z"></path>
-                </svg>
-            </button>
-            <button class="avatar-btn" aria-label="User profile">
-                <img src="https://yt3.ggpht.com/y1F8I9S6V0o3z6Wy-Vt7T0vLXv3r1uoZvsI6A3DOKD2vYfV5nH0zO-1g6z4hbyvC3z3gL3G1=s88-c-k-c0x00ffffff-no-rj" alt="User avatar">
-            </button>
+        <div class="mic-bg">
+          <svg class="mic-icon" viewBox="0 0 24 24">
+            <path
+              d="M12 14c1.66 0 2.99-1.34 2.99-3L15 5c0-1.66-1.34-3-3-3S9 3.34 9 5v6c0 1.66 1.34 3 3 3zm5.3-3c0 3-2.54 5.1-5.3 5.1S6.7 14 6.7 11H5c0 3.41 2.72 6.23 6 6.72V21h2v-3.28c3.28-.48 6-3.3 6-6.72h-1.7z"
+            ></path>
+          </svg>
         </div>
+      </div>
+      <div class="end-nv">
+        <div class="create-btn">
+          <svg class="plus-icon" viewBox="0 0 24 24">
+            <path
+              d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-5 14h-2v-4h-4v-2h4V7h2v4h4v2h-4v4z"
+            ></path>
+          </svg>
+          <span class="create-word">Create</span>
+        </div>
+        <button class="bell-btn" aria-label="Notifications">
+          <svg class="bell-icon" viewBox="0 0 24 24">
+            <path
+              d="M12 22c1.1 0 2-.9 2-2h-4c0 1.1.9 2 2 2zm6-6v-5c0-3.07-1.64-5.64-4.5-6.32V4c0-.83-.67-1.5-1.5-1.5s-1.5.67-1.5 1.5v.68C7.63 5.36 6 7.92 6 11v5l-2 2v1h16v-1l-2-2z"
+            ></path>
+          </svg>
+        </button>
+        <button class="avatar-btn" aria-label="User profile">
+          <img
+            src="https://yt3.ggpht.com/y1F8I9S6V0o3z6Wy-Vt7T0vLXv3r1uoZvsI6A3DOKD2vYfV5nH0zO-1g6z4hbyvC3z3gL3G1=s88-c-k-c0x00ffffff-no-rj"
+            alt="User avatar"
+          />
+        </button>
+      </div>
     </nav>
     <main>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque quod magnam asperiores velit reprehenderit beatae nisi distinctio. Quae harum accusamus voluptatem aspernatur.
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque quod magnam
+      asperiores velit reprehenderit beatae nisi distinctio. Quae harum
+      accusamus voluptatem aspernatur.
     </main>
-    <script>
-        
-    </script>
-</body>
+    <script></script>
+  </body>
 </html>
